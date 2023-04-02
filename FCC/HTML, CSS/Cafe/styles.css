@@ -46,6 +46,7 @@ hr {
 
 .bottom-line {
 	margin-top: 25px;
+	min-width: none;
 }
 
 h1,
