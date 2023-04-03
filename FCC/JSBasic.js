@@ -529,7 +529,7 @@ const secondTree = myPlants[1].list[1]
 console.log(secondTree)
  */
 // Setup
-const recordCollection = {
+/* const recordCollection = {
 	2548: {
 		albumTitle: 'Slippery When Wet',
 		artist: 'Bon Jovi',
@@ -551,15 +551,56 @@ const recordCollection = {
 
 // Only change code below this line
 function updateRecords(records, id, prop, value) {
-	console.log(records.id)
-	/* 	if (value == '') {
-		delete records.id.prop
-	} */
-	/* if (prop === records.tracks && value !== '') {
-			records = records.tracks[]
-		} */
-
+	if (value === '') {
+		delete records[id][prop]
+	} else if (prop !== 'tracks') {
+		records[id][prop] = value
+	} else {
+		if (!records[id].hasOwnProperty('tracks')) {
+			records[id].tracks = []
+		}
+		records[id].tracks.push(value)
+	}
 	return records
 }
+updateRecords(recordCollection, 5439, 'artist', 'ABBA')
 
 console.log(updateRecords(recordCollection, 5439, 'artist', 'ABBA'))
+ */
+
+/* // Setup
+const myArray = []
+let i = 5
+
+while (i >= 0) {
+	myArray.push(i)
+	i--
+}
+console.log(myArray)
+// Only change code below this line
+ */
+/* // Setup
+const myArray = []
+for (let i = 1; i <= 5; i++) {
+	myArray.push(i)
+}
+console.log(myArray)
+// Only change code below this line
+ */
+
+/* // Setup
+const myArray = []
+for (let i = 1; i < 10; i += 2) {
+	myArray.push(i)
+}
+console.log(myArray)
+// Only change code below this line
+ */
+/* // Setup
+const myArray = []
+for (let i = 10; i > 0; i -= 2) {
+	myArray.push(i)
+}
+console.log(myArray)
+// Only change code below this line
+ */
