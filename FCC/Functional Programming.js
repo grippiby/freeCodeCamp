@@ -442,3 +442,26 @@ const ratings = watchList
 
 console.log(ratings)
  */
+
+/* function sliceArray(anim, beginSlice, endSlice) {
+	let newArray = anim.slice(beginSlice, endSlice)
+	return newArray
+	// Only change code below this line
+
+	// Only change code above this line
+}
+
+const inputAnim = ['Cat', 'Dog', 'Tiger', 'Zebra', 'Ant']
+sliceArray(inputAnim, 1, 3)
+ */
+
+/* function nonMutatingSplice(cities) {
+	// Only change code below this line
+
+	return cities.slice(0, 3)
+	// Only change code above this line
+}
+
+const inputCities = ['Chicago', 'Delhi', 'Islamabad', 'London', 'Berlin']
+console.log(nonMutatingSplice(inputCities))
+ */
