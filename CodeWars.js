@@ -52,3 +52,162 @@ console.log(howMuchWater(10, 10, 2))
 console.log(howMuchWater(10, 11, 20))
 console.log(howMuchWater(50, 15, 29))
  */
+
+/* function consecutive(arr) {
+	//code me
+	arr.sort((a, b) => a - b)
+	let min = arr[0]
+	let max = arr[arr.length - 1]
+	let count = 0
+	for (let i = min; i <= max; i++) {
+		if (!arr.includes(i)) {
+			count++
+		}
+	}
+	return count
+}
+console.log(consecutive([4, 8, 6])) */
+
+/* function divisibleBy(numbers, divisor) {
+	numbers.sort((a, b) => a - b)
+	let newArr = []
+
+	//numbers.forEach((element) => {
+	//	if (+element % divisor == 0) {
+	//		newArr.push(element)
+	//	}
+	//	})
+
+	for (let i = 0; i <= numbers.length; i++) {
+		if (+numbers[i] % divisor == 0) {
+			newArr.push(numbers[i])
+		}
+	}
+	return newArr
+	console.log(numbers)
+}
+
+console.log(divisibleBy([1, 4, 3, 4, +0, 6], 2))
+ */
+
+/* function arrAdder(arr) {
+	let result = ''
+
+	for (let i = 0; i < arr[0].length; i++) {
+		for (let j = 0; j < arr.length; j++) {
+			result += arr[j][i]
+		}
+		result +=' '
+	}
+
+	return result.trim()
+}
+
+arrAdder([
+	['J', 'L', 'L', 'M'],
+	['u', 'i', 'i', 'a'],
+	['s', 'v', 'f', 'n'],
+	['t', 'e', 'e', ''],
+])
+
+console.log(
+	arrAdder([
+		['T', 'M', 'i', 't', 'p', 'o', 't', 'c'],
+		['h', 'i', 's', 'h', 'o', 'f', 'h', 'e'],
+		['e', 't', , 'e', 'w', , 'e', 'l'],
+		['', 'o', '', '', 'e', '', '', 'l'],
+		['', 'c', '', '', 'r', '', '', ''],
+		['', 'h', '', '', 'h', '', '', ''],
+		['', 'o', '', '', 'o', '', '', ''],
+		['', 'n', '', '', 'u', '', '', ''],
+		['', 'd', '', '', 's', '', '', ''],
+		['', 'r', '', '', 'e', '', '', ''],
+		['', 'i', '', '', '', '', '', ''],
+		['', 'a', '', '', '', '', '', ''],
+	])
+)
+ */
+
+/* function betweenExtremes(numbers) {
+	let min = numbers.sort((a, b) => a - b)[0]
+	let max = numbers.sort((a, b) => a - b)[numbers.length - 1]
+	
+	return max - min
+}
+console.log(betweenExtremes([21, 34, 54, 43, 26, 12]))
+ */
+/* function sumEvenNumbers(input) {
+	let sum = 0
+	input.forEach((element) => {
+		if (Math.round(element) % 2 === 0) {
+			sum += element
+		}
+	})
+	// [...]
+	return sum
+}
+
+console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+ */
+/* function validParentheses(parenStr) {
+	let myArr = []
+	if (parenStr.length % 2 == 0) {
+		for (let i = 0; i < parenStr.length; i++) {
+			el = parenStr[i]
+			if (el === '(') {
+				myArr.push(el)
+			} else if (el === ')') {
+				if (myArr.length === 0) {
+					return false
+				} else {
+					myArr.pop()
+				}
+			}
+		}
+	}
+	return false
+}
+ */
+/* function validParentheses(str) {
+	const stack = []
+	for (let i = 0; i < str.length; i++) {
+		const char = str[i]
+		if (char === '(') {
+			stack.push(char)
+		} else if (char === ')') {
+			if (stack.length === 0) {
+				return false // There is no matching opening parenthesis
+			} else {
+				stack.pop()
+			}
+		} else {
+			return false // The string contains invalid characters
+		}
+	}
+	return stack.length === 0 // True if all opening parentheses are matched and popped
+}
+ */
+/* function largest(n, array) {
+	// Find the n highest elements in a list
+	let newArr = []
+	array.sort((a, b) => b - a)
+	for (let i = 0; i < n; i++) {
+		const element = array[i]
+		newArr.push(element)
+	}
+
+	return newArr.reverse()
+}
+console.log(largest(2, [7, 6, 5, 4, 3, 2, 1]))
+console.log(largest(2, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
+ */
+/* function largest(n, array) {
+	// Find the n highest elements in a list
+	let newArr = array.sort((a, b) => a - b)
+	n > 0 ? (newArr = newArr.slice(-n)) : (newArr = [])
+	return newArr
+}
+console.log(largest(2, [7, 6, 5, 4, 3, 2, 1]))
+console.log(largest(2, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
+console.log(largest(0, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
+ */
