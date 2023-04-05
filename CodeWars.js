@@ -211,3 +211,83 @@ console.log(largest(2, [7, 6, 5, 4, 3, 2, 1]))
 console.log(largest(2, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
 console.log(largest(0, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
  */
+/* function initials(name) {
+	const words = name.split(' ')
+	const firstInitials = words
+
+
+
+		.slice(0, -1)
+		.map((word) => word[0].toUpperCase() + '.')
+	const lastWord = words[words.length - 1].replace(/^\w/, (c) =>
+		c.toUpperCase()
+	)
+	return [...firstInitials, lastWord].join('')
+}
+console.log(initials('code wars')) //C.Wars
+console.log(initials('Barack Hussain obama')) //B.H.Obama
+ */
+/* function initials(name) {
+	const words = name.split(' ')
+	const firstInitials = words
+		.slice(0, -1)
+		.map((word) => word[0].toUpperCase() + '.')
+
+	const lastWord =
+		words[words.length - 1].substr(0, 1).toUpperCase() +
+		words[words.length - 1].substr(1)
+	return [...firstInitials, lastWord].join('')
+}
+console.log(initials('code wars')) //C.Wars
+console.log(initials('Barack Hussain obama')) //B.H.Obama
+ */
+/* function disemvowel(str) {
+	return str.replace(/[aeiou]/gi, '')
+}
+console.log(disemvowel('This website is for losers LOL!')) //"Ths wbst s fr lsrs LL!"
+ */
+
+// your code here
+
+/* BigO - alghorythm
+function keepOrder(ary, val) {
+	let start = 0
+	let end = ary.length - 1
+
+	while (start <= end) {
+		const mid = Math.floor((start + end) / 2)
+
+		if (ary[mid] < val) {
+			start = mid + 1
+		} else if (ary[mid] > val) {
+			end = mid - 1
+		} else {
+			return mid
+		}
+	}
+
+	return start
+}
+console.log(keepOrder([1, 1, 2, 2, 2], 2)) //2
+console.log(keepOrder([1, 2, 3, 4, 7], 5)) //4
+ */
+
+/* function keepOrder(ary, val) {
+	const index = ary.findIndex((el, i) => el >= val)
+	return index === -1 ? ary.length : index
+}
+ */
+/* function keepOrder(ary, val) {
+	return ary.filter((value) => value < val).length
+}
+console.log(keepOrder([1, 1, 2, 2, 2], 2)) //2
+console.log(keepOrder([1, 2, 3, 4, 7], 5)) //4
+ */
+/* function keepOrder(ary, val) {
+	ary.push(val)
+	ary.sort((a, b) => a - b)
+	return ary.indexOf(val)
+}
+console.log(keepOrder([2, 5, 7, 9, 10, 20], 6))
+ */
+false || (NaN && true) || 0
