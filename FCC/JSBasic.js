@@ -657,8 +657,9 @@ do {
 // Only change code above this line
  */
 
-recursion
-/* function countdown(n) {
+/*
+//recursion
+function countdown(n) {
 	if (n < 1) {
 		return []
 	} else {
@@ -666,8 +667,32 @@ recursion
 
 		countArray.unshift(n)
 		return countArray
-		console.log(m)
 	}
 }
 console.log(countdown(9))
+ */
+/* function rangeOfNumbers(startNum, endNum) {
+	if (startNum < 1) {
+		return []
+	} else {
+		const countArray = rangeOfNumbers(startNum - 1)
+
+		countArray.push(startNum)
+		return countArray
+	}
+}
+console.log(rangeOfNumbers(3, 9))
+ */
+/* 
+//recursion a b 
+function rangeOfNumbers(startNum, endNum) {
+	if (endNum < startNum) {
+		return []
+	} else {
+		const countArray = rangeOfNumbers(startNum, endNum - 1)
+		countArray.push(endNum)
+		return countArray
+	}
+}
+console.log(rangeOfNumbers(6, 6))
  */
