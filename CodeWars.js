@@ -303,3 +303,42 @@ console.log(keepOrder([2, 5, 7, 9, 10, 20], 6))
 }
 console.log(isItANum('v   uf  f 0tt2eg qe0b 8rtyq4eyq564()(((((165'))
  */
+/* function solution(start, finish) {
+	let count = 0
+
+
+			let sum = finish - startif (start % 2 === 0 && finish % 2 === 0) {
+		return (count = (finish - start) / 3)
+	}
+	if (sum % 2 == 0) {
+		return sum / 2
+	}
+
+	while (newStart <= finish) {
+		newStart += 3
+		count += 1
+		if (newStart > finish) {
+			return count
+		}
+	}
+}
+console.log(solution(1, 5))
+console.log(solution(1, 9))
+console.log(solution(2, 8))
+ */
+/* function insertDash(num) {
+	let newArr = []
+	for (let i = 0; i < num.toString().length; i++) {
+		let prev = num.toString()[i]
+		const thisElement = num.toString()[i + 1]
+		newArr.push(prev)
+		if (prev % 2 === 1 && thisElement % 2 === 1) {
+			newArr.push('-')
+		}
+	}
+
+	return newArr.join('')
+}
+
+console.log(insertDash(1003567)) // 1003-567')
+ */
