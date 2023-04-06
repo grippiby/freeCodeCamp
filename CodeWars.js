@@ -290,4 +290,16 @@ console.log(keepOrder([1, 2, 3, 4, 7], 5)) //4
 }
 console.log(keepOrder([2, 5, 7, 9, 10, 20], 6))
  */
-false || (NaN && true) || 0
+/* false || (NaN && true) || 0
+ */
+
+/* function isItANum(str) {
+	str = str.replace(/\D/g, '')
+	if (str.length === 11) {
+		return str
+	} else {
+		return 'Not a phone number'
+	}
+}
+console.log(isItANum('v   uf  f 0tt2eg qe0b 8rtyq4eyq564()(((((165'))
+ */
