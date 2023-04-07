@@ -342,3 +342,54 @@ console.log(solution(2, 8))
 
 console.log(insertDash(1003567)) // 1003-567')
  */
+/* 
+function allNonConsecutive(arr) {
+	let newArr = []
+	for (let i = 0; i < arr.length; i++) {
+		const element = arr[i]
+
+		if (arr[i + 1] - element > 1) {
+			let obj = { i: i + 1, n: arr[i + 1] }
+			console.log(obj)
+			newArr.push(obj)
+		}
+	}
+	return newArr
+}
+console.log(allNonConsecutive([1, 2, 3, 4, 6, 7, 8, 10]))
+ */
+/* function bmi(weight, height) {
+	let bmi = weight / Math.pow(height, 2)
+
+	if (bmi.toFixed(1) <= 18.5) {
+		return 'Underweight'
+	}
+	if (bmi.toFixed(1) <= 25.0) {
+		return 'Normal'
+	}
+	if (bmi.toFixed(1) <= 30.0) {
+		return 'Overweight'
+	}
+	if (bmi.toFixed(1) > 30) {
+		return 'Obese'
+	}
+}
+console.log(bmi(80, 1.8)) // "Normal")
+ */
+
+/* function sortMyString(S) {
+	let str = S
+	let odd = ''
+	let even = ''
+	for (let i = 0; i < str.length; i += 2) {
+		odd += str[i]
+	}
+	for (let i = 1; i < str.length; i += 2) {
+		even += str[i]
+	}
+
+	return `${odd} ${even}`
+}
+console.log(sortMyString('CodeWars')) // 'CdWr oeas'
+console.log(sortMyString("YCOLUE'VREER")) //, "YOU'RE CLEVER"
+ */
