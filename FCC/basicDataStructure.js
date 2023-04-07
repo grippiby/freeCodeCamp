@@ -87,3 +87,39 @@ quickCheck([3, 5, 9, 125, 45, 2], 125) // return true
 
 console.log([125].indexOf(125))
  */
+/* function filteredArray(arr, elem) {
+	let newArr = []
+	// Only change code below this line
+	for (let i = 0; i < arr.length; i++) {
+		const element = arr[i]
+		console.log(element)
+		if (element.includes(elem)) {
+		} else {
+			newArr.push(element)
+		}
+	}
+	// Only change code above this line
+	return newArr
+}
+
+console.log(
+	filteredArray(
+		[
+			[3, 2, 3],
+			[1, 6, 3],
+			[3, 13, 26],
+			[19, 3, 9],
+		],
+		3
+	)
+)
+console.log(
+	filteredArray(
+		[
+			['amy', 'beth', 'sam'],
+			['dave', 'sean', 'peter'],
+		],
+		'peter'
+	)
+) // [["amy", "beth", "sam"]]
+ */
