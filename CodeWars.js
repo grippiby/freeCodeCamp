@@ -433,3 +433,37 @@ console.log(charToAscii('aaaaAA')) //, null,"deals with an empty str")
 }
 console.log(charToAscii('hello world')) //, null,"deals with an empty str")
  */
+
+/* function titleToNumber(title) {
+	let sum = 0
+
+	for (k = 0, i = 0; i < title.length; i++) {
+		k = 26 * k + title.charCodeAt(i) - 64 // 26 * k - шаг на след ячейку; title.charCodeAt(i) - 64 - число текущей ячейки; К - аккумулятор, изначально 0, тк. при умножении на 0 мы получим 0 и прибавим текущее значение
+		console.log(k)
+		 = k
+	}
+	return sum
+}
+
+console.log(titleToNumber('BA')) //,53);
+ */
+function removeSmallest(numbers) {
+	let newArr = []
+	let min = 0
+
+	let b = numbers.map(function (el, i, array) {
+		// code to be executed on each element
+		/* 	console.log(min) */
+	})
+	return b /*
+
+	/* 	for (let min = numbers[0], i = 0; i < numbers.length; i++) {
+		const element = numbers[i]
+		if (min - element < 0) {
+			newArr.push(element)
+
+			console.log(newArr)
+		} else min = element
+	} */
+}
+console.log(removeSmallest([2, 2, 1, 2, 1])) //, [2, 2, 2, 1], "Wrong result for [2, 2, 1, 2, 1]")
