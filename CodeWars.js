@@ -393,3 +393,43 @@ console.log(bmi(80, 1.8)) // "Normal")
 console.log(sortMyString('CodeWars')) // 'CdWr oeas'
 console.log(sortMyString("YCOLUE'VREER")) //, "YOU'RE CLEVER"
  */
+/* function charToAscii(string) {
+	//your code here
+	let myArr = []
+
+	if (string === '') {
+		return null
+	} else {
+		for (let i = 0; i < string.length; i++) {
+			const element = string[i]
+			const toAscii = string[i].charCodeAt(0)
+			const myElem = `${element}:${toAscii}`
+			if (!myArr.includes(myElem)) {
+				myArr.push(myElem)
+			}
+		}
+	}
+	return myArr
+}
+console.log(charToAscii('aaaaAA')) //, null,"deals with an empty str")
+ */
+/* function charToAscii(string) {
+	//your code here
+	let myStr = {}
+
+	if (string.length === 0) {
+		return null
+	} else {
+		for (let i = 0; i < string.length; i++) {
+			const element = string[i]
+
+			if (!element.match(/[a-zA-Z]/) || myStr[element]) {
+				continue
+			}
+			myStr[element] = element.charCodeAt(0)
+		}
+	}
+	return myStr
+}
+console.log(charToAscii('hello world')) //, null,"deals with an empty str")
+ */

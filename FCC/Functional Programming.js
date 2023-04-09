@@ -601,3 +601,48 @@ function getRating(watchList) {
 
 console.log(getRating(watchList))
  */
+/* const squareList = (arr) => {
+	// Only change code below this line
+	let newArr = []
+	arr.filter((numb) => {
+		if (numb >= 1 && (numb ^ 0) === numb) {
+			return newArr.push(Math.pow(numb, 2))
+		}
+	})
+	return newArr
+	// Only change code above this line
+}
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2])
+console.log(squaredIntegers)
+ */
+/* Array.prototype.myFilter = function (callback) {
+	const newArray = []
+	for (let i = 0; i < callback.length; i++) {
+		const element = callback[i]
+		if (element) {
+			return newArray.push(element)
+		}
+		console.log(element)
+	}
+	// Only change code below this line
+
+	// Only change code above this line
+	return newArray
+}
+
+console.log([(23, 65, 98, 5, 13)].myFilter((item) => item % 2)) //should equal [23, 65, 5, 13].
+ */
+let myString = 'this is a string!!'
+String.prototype.toBase64 = function () {
+	/* console.log(this.btoa(this)) */
+
+	return btoa(toString(this))
+}
+
+String.prototype.fromBase64 = function () {
+	let me = atob(this.toString())
+	return this.toString(me)
+}
+console.log('this is a string!!'.toBase64())
+console.log('dGhpcyBpcyBhIHN0cmluZyEh'.fromBase64()) //, 'dGhpcyBpcyBhIHN0cmluZyEh'
