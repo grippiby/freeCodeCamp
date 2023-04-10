@@ -123,18 +123,29 @@ console.log(
 	)
 ) // [["amy", "beth", "sam"]]
  */
-let userActivity = {
-	id: 23894201352,
-	date: 'January 1, 2017',
-	data: {
-		totalUsers: 51,
-		online: 42,
-	},
+/* 
+function alphabeticalOrder(arr) {
+	// Only change code below this line
+	arr.sort()
+	return arr
+	// Only change code above this line
 }
 
-// Only change code below this line
+console.log(alphabeticalOrder(['a', 'd', 'c', 'a', 'z', 'g']))
+console.log(alphabeticalOrder(['a', 'a', 'a', 'a', 'x', 't']))
+ */
 
-return (userActivity.online.data.online = 45)
-// Only change code above this line
+/* const globalArray = [5, 6, 3, 2, 9]
 
-console.log(userActivity)
+function nonMutatingSort(arr) {
+	// Only change code below this line
+	let newArr = [...arr].sort((a, b) => a - b)
+
+	return newArr
+
+	// Only change code above this line
+}
+
+console.log(nonMutatingSort(globalArray))
+console.log(globalArray)
+ */
