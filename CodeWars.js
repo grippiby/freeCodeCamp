@@ -447,23 +447,41 @@ console.log(charToAscii('hello world')) //, null,"deals with an empty str")
 
 console.log(titleToNumber('BA')) //,53);
  */
-function removeSmallest(numbers) {
-	let newArr = []
-	let min = 0
-
-	let b = numbers.map(function (el, i, array) {
-		// code to be executed on each element
-		/* 	console.log(min) */
-	})
-	return b /*
-
-	/* 	for (let min = numbers[0], i = 0; i < numbers.length; i++) {
-		const element = numbers[i]
-		if (min - element < 0) {
-			newArr.push(element)
-
-			console.log(newArr)
-		} else min = element
-	} */
+/* function removeSmallest(numbers) {
+	let newArr = [...numbers]
+	let min = newArr[0]
+	let indOfMin = 0
+	//find min number
+	for (let i = 0; i < newArr.length; i++) {
+		const element = newArr[i]
+		if (min > element) {
+			min = element
+			indOfMin = i
+		}
+	}
+	newArr.splice(indOfMin, 1)
+	console.log(`my min is ${min}`)
+	console.log(`index f Min ${indOfMin}`)
+	return newArr
 }
 console.log(removeSmallest([2, 2, 1, 2, 1])) //, [2, 2, 2, 1], "Wrong result for [2, 2, 1, 2, 1]")
+ */
+
+/* function divCon(x) {
+	let numb = 0
+	let str = 0
+	x.map((el) => {
+		typeof el === 'number' ? (numb += el) : (str = str + Number(el))
+	})
+	return numb - str
+	console.log(str)
+}
+console.log(divCon(['3', 6, 6, 0, '5', 8, 5, '6', 2, '0'])) //, 13))
+// reduce analog
+let numb = 0
+	let str = 0
+	x.map((el) => {
+		typeof el === 'number' ? (numb += el) : (str = str + Number(el))
+	})
+	return numb - str
+ */

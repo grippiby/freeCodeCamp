@@ -40,3 +40,9 @@ console.log(dog.sayLegs())
 
 dog.sayLegs()
  */
+/* function Dog() {
+	this.name = 'spot'
+	this.color = 'black'
+	this.numLegs = 4
+}
+ */
