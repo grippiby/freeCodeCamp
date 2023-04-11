@@ -485,3 +485,17 @@ let numb = 0
 	})
 	return numb - str
  */
+function dotCalculator(equation) {
+	let fst = ''
+	let scnd = 0
+	let symb = ''
+	for (let i = 0; i === '.'; i++) {
+		const element = equation[i]
+
+		console.log(element)
+		fst += '.'
+	}
+	return fst
+}
+
+console.log(dotCalculator('..... - ...')) //'..'))
