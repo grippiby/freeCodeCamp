@@ -610,3 +610,60 @@ console.log(mispelled('1versed', 'versed')) // returns true
 mispelled('versed', 'versed') // returns true
 console.log(mispelled('versed', 'aaversed'))
  */
+/* function alphabetWar(fight) {
+	let left = 0
+	let right = 0
+	for (let i = 0; i < fight.length; i++) {
+		const element = fight[i]
+		switch (element) {
+			case 'w':
+				left += 4
+				break
+			case 'p':
+				left += 3
+				break
+			case 'b':
+				left += 2
+				break
+			case 's':
+				left += 1
+				break
+			case 'm':
+				right += 4
+				break
+			case 'q':
+				right += 3
+				break
+			case 'd':
+				right += 2
+				break
+			case 'z':
+				right += 1
+		}
+	}
+	console.log(left)
+	console.log(right)
+	return left === right
+		? "Let's fight again!"
+		: left > right
+		? 'Left side wins!'
+		: 'Right side wins!'
+}
+
+console.log(alphabetWar('wwwwww')) //, "Right side wins!" );)
+ */
+/* function bandNameGenerator(str) {
+	if (str[0] === str.charAt(str.length - 1)) {
+		let mystr = str.charAt(str[0]).toLocaleUpperCase() + str.substring(1)
+
+		return mystr + str.substring(1)
+	} else {
+		let mystr = str.charAt(str[0]).toLocaleUpperCase() + str.substring(1)
+		return 'The ' + mystr
+	}
+
+	return str
+	// Happy coding
+}
+console.log(bandNameGenerator('sandles')) //, 'Sandlesandles'))
+console.log(bandNameGenerator('knife')) //, 'The Knife') */
