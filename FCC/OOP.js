@@ -46,3 +46,27 @@ dog.sayLegs()
 	this.numLegs = 4
 }
  */
+/* function Dog() {
+	this.name = 'Rupert'
+	this.color = 'brown'
+	this.numLegs = 4
+}
+
+let hound = new Dog() */
+/*  */
+/* function Dog(name, color, numLegs = 4) { */
+/* 	this.name = name; */
+/* 	this.color =  color; */
+/* 	this.numLegs =4; */
+/* 	} */
+/* 	 */
+/* 	const terrier = new Dog('terry', 'black') */
+
+/* function House(numBedrooms) {
+	this.numBedrooms = numBedrooms
+}
+
+const myHouse = new House(4)
+myHouse instanceof House
+// Only change code below this line
+ */

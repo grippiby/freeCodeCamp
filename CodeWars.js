@@ -485,17 +485,128 @@ let numb = 0
 	})
 	return numb - str
  */
+/* 
 function dotCalculator(equation) {
-	let fst = ''
+	let fst = 0
 	let scnd = 0
-	let symb = ''
-	for (let i = 0; i === '.'; i++) {
+	let symb = undefined
+	let sum = undefined
+	let answer = ''
+	for (let i = 0; i < equation.length; i++) {
 		const element = equation[i]
 
-		console.log(element)
-		fst += '.'
+		if (element === '.') {
+			fst += 1
+		}
+		if (element === ' ') {
+			symb = (equation[i + 1] + equation[i + 2]).trim()
+			break
+		}
 	}
-	return fst
+
+	console.log(`myfst ${fst}`)
+	for (let i = equation.length; i > 0; i--) {
+		const element = equation[i]
+		if (element === '.') {
+			scnd += 1
+		}
+		if (element === ' ') {
+			break
+		}
+	}
+	console.log(`myScnd ${scnd}`)
+
+	switch (symb) {
+		case '-':
+			sum = fst - scnd
+			break
+		case '+':
+			sum = fst + scnd
+			break
+		case '*':
+			sum = fst * scnd
+			break
+		case '//':
+			sum = Math.floor(fst / scnd)
+			console.log(sum)
+
+			break
+	}
+
+	for (let i = 0; i < sum; i++) {
+		answer += '.'
+	}
+
+	return answer
 }
 
-console.log(dotCalculator('..... - ...')) //'..'))
+console.log(dotCalculator('..... // .')) //'..'))
+console.log(dotCalculator('..... * ...')) //'..'))
+ */
+/* function sortByLength(array) {
+	let newArr = [...array]
+	return newArr.sort((a, b) => a.length - b.length)
+
+}
+console.log(sortByLength(['Beg', 'Life', 'I', 'To'])) //["I", "To", "Beg", "Life"] */
+
+/* function noOdds(values) {
+	let odd = []
+
+	values.map((el) => {
+		if (el % 2 === 0) {
+			odd.push(el)
+		}
+	})
+	
+	return odd
+	// Return all non-odd values
+}
+console.log(noOdds([0, 1, 2, 3])) //, [0,2] )
+console.log(noOdds([0, 1])) //, [0]
+ */
+
+/* function add() {
+	let sum = 0
+	for (let i = 0; i < arguments.length; i++) {
+		element = arguments[i]
+		let newVal = element / (i + 1)
+		sum += newVal
+	}
+	return Math.round(sum)
+}
+console.log(add(2)) //2)
+console.log(add(4, -3, -2)) // 2)
+console.log(add(-1, -2, -3, -4)) //, -4);)
+ */
+/* 
+var mispelled = function (word1, word2) {
+	if (word1.length === word2.length) {
+		let count = word1.length
+		for (let i = 0; i < word1.length; i++) {
+			const element = word1[i]
+			const element2 = word2[i]
+			if (element === element2) {
+				count--
+			}
+		}
+		return count > 1 ? false : true
+	}
+
+	if (word1.length - 1 === word2.length) {
+		return word1.includes(word2)
+	}
+	if (word1.length + 1 === word2.length) {
+		return word2.includes(word1)
+	}
+	if (word1.length > word2.length || word1.length < word2.length) {
+		return false
+	}
+}
+console.log(mispelled('versed', 'xersed')) // returns true
+mispelled('versed', 'applb') // returns false
+console.log(mispelled('versed', 'v5rsed')) // returns true
+console.log(mispelled('1versed', 'versed')) // returns true
+mispelled('versed', 'versed') // returns true
+console.log(mispelled('versed', 'aaversed'))
+ */
