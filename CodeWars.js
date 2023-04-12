@@ -667,7 +667,7 @@ console.log(alphabetWar('wwwwww')) //, "Right side wins!" );)
 }
 console.log(bandNameGenerator('sandles')) //, 'Sandlesandles'))
 console.log(bandNameGenerator('knife')) //, 'The Knife') */
-function heron(a, b, c) {
+/* function heron(a, b, c) {
 	let answ = 0
 	let s = (a + b + c) / 2
 
@@ -676,3 +676,27 @@ function heron(a, b, c) {
 	return answ
 }
 console.log(heron(3, 4, 5))
+ */
+/* var kookaCounter = function (laughing) {
+	let count = 1
+	let letter = laughing[0]
+	
+	if (laughing.length < 1) {
+		return 0
+	}
+	for (let i = 2; i < laughing.length; i += 2) {
+		const element = laughing[i]
+		if (element === letter) {
+			count += 0
+			letter = element
+			console.log(letter)
+		}
+		if (element !== letter) {
+			count += 1
+			letter = element
+		}
+	}
+	return count
+}
+console.log(kookaCounter('HaHaHahahaHaHa')) //3
+ */
