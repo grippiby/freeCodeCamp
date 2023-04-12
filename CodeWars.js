@@ -667,3 +667,12 @@ console.log(alphabetWar('wwwwww')) //, "Right side wins!" );)
 }
 console.log(bandNameGenerator('sandles')) //, 'Sandlesandles'))
 console.log(bandNameGenerator('knife')) //, 'The Knife') */
+function heron(a, b, c) {
+	let answ = 0
+	let s = (a + b + c) / 2
+
+	answ = Math.sqrt(s * (s - a) * (s - b) * (s - c))
+
+	return answ
+}
+console.log(heron(3, 4, 5))
