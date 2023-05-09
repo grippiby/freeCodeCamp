@@ -36,12 +36,8 @@ editInPlace()
 const PI = freezeObj() */
 
 // Function that returns a string representing a cup of green tea
+/* 
 const prepareTea = () => 'greenTea'
-/*
-Given a function (representing the tea type) and number of cups needed, the
-following function returns an array of strings (each representing a cup of
-a specific type of tea).
-*/
 
 const getTea = (numOfCups) => {
 	const teaCups = []
@@ -56,7 +52,7 @@ const getTea = (numOfCups) => {
 // Only change code below this line
 
 const tea4TeamFCC = getTea(40)
-console.log(tea4TeamFCC)
+console.log(tea4TeamFCC) */
 // Only change code above this line
 
 /* let a = 48;
@@ -67,3 +63,27 @@ let c = 33;
 a /= 12;
 b /= 4;
 c /= 11; */
+/* 
+// Only change code below this line
+function urlSlug(title) {
+	let newStr = title
+		.trim()
+		.toLowerCase()
+		.split(' ')
+		.filter((word) => word !== '')
+
+	console.log(newStr)
+	return newStr.join('-')
+}
+// Only change code above this line
+
+
+console.log(urlSlug(' Winter Is  Coming'))
+ */
+/* function checkPositive(arr) {
+	// Only change code below this line
+	return arr.every((num) => num >= 0)
+	// Only change code above this line
+}
+
+checkPositive([1, 2, 3, -4, 5]) */

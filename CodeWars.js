@@ -700,3 +700,137 @@ console.log(heron(3, 4, 5))
 }
 console.log(kookaCounter('HaHaHahahaHaHa')) //3
  */
+
+/* function computerToPhone(numbers) {
+	// ...
+	let str = numbers
+	let newStr = ''
+	for (let i = 0; i < str.length; i++) {
+		const element = str[i]
+
+		switch (element) {
+			case '1':
+				newStr += '7'
+				break
+			case '2':
+				newStr += '8'
+				break
+			case '3':
+				newStr += '9'
+				break
+			case '7':
+				newStr += '1'
+				break
+			case '8':
+				newStr += '2'
+				break
+			case '9':
+				newStr += '3'
+				break
+			default:
+				newStr += element
+				break
+		}
+	}
+	return newStr
+}
+console.log(computerToPhone('0789456123')) //, "0123456789"))
+ */
+
+/* function swap(string) {
+	const re = /^[aeiou]$/i
+	let nstr = ''
+	for (let i = 0; i < string.length; i++) {
+		const element = string[i]
+		if (element.match(re)) {
+			nstr += element.toUpperCase()
+		} else {
+			nstr += element
+		}
+	}
+	return nstr
+}
+console.log(swap('Codewars')) //, "COdEwArs";)
+
+function swap(st){
+	return st.replace(/[aeiou]/g, v => v.toUpperCase() )
+ }//z. */
+
+/* let b = [1, [1, 2], [3, 4], [2, 4]]
+function revAr(params) {
+	return params
+		.join(',')
+		.split(',')
+		.map((el) => +el)
+}
+console.log(revAr(b))
+ */
+
+/* function getMiddle(s) {
+	let str = s
+	if (str.length % 2 === 0) {
+		let symb = str.length / 2
+		return str[symb - 1] + str[symb]
+	}
+
+	return str[Math.ceil(str.length / 2 - 1)]
+}
+console.log(getMiddle('test')) //es
+console.log(getMiddle('testing')) //t
+console.log(getMiddle('A')) //A
+ */
+
+/* function removeEveryOther(arr) {
+	return arr.filter((el, ind) => {
+		if (ind % 2 === 0) {
+			return el
+		}
+	})
+
+	//your code here
+}
+console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again'])) // ['Hello',
+ */
+
+/* let b = [1, [1, 2], [3, 4], [2, 4]]
+
+const head = (arr) => arr[0]
+const last = (arr) => arr[arr.length - 1]
+
+
+var tail = (arr) => arr.slice(1)
+const init = (arr) => arr.slice(0, -1)
+console.log(head(b))
+console.log(last([7, 2]))
+console.log(tail([33, 42]))
+console.log(init(b))
+console.log(init([1, 5, 7, 9]))
+console.log(init([1, 5, 7, 9]))
+ */
+
+/* function highAndLow(numbers) {
+	let newArr = numbers.split(' ').sort((a, b) => a - b)
+	// let str = newArr[0]
+	//let str = newArr[newArr.length - 1]
+	// let str = `${newArr[newArr.length - 1]} ${newArr[0]}`
+	return `${newArr[newArr.length - 1]} ${newArr[0]}`
+	console.log(newArr)
+
+	// ...
+}
+
+console.log(highAndLow('1 2 3 4 5')) // return "5 1"
+console.log(highAndLow('1 2 -3 4 5'))
+ */
+
+/* function descendingOrder(n) {
+	let str = n
+		.toString()
+		.split('')
+		.sort((a, b) => b - a)
+		.join('')
+		.toString()
+	return +str
+}
+console.log(descendingOrder(123456789)) //, 987654321);
+ */

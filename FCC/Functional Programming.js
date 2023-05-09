@@ -633,9 +633,9 @@ console.log(squaredIntegers)
 
 console.log([(23, 65, 98, 5, 13)].myFilter((item) => item % 2)) //should equal [23, 65, 5, 13].
  */
+/* 
 let myString = 'this is a string!!'
 String.prototype.toBase64 = function () {
-	/* console.log(this.btoa(this)) */
 
 	return btoa(toString(this))
 }
@@ -646,3 +646,53 @@ String.prototype.fromBase64 = function () {
 }
 console.log('this is a string!!'.toBase64())
 console.log('dGhpcyBpcyBhIHN0cmluZyEh'.fromBase64()) //, 'dGhpcyBpcyBhIHN0cmluZyEh'
+
+
+ */
+
+/* 
+// Only change code below this line
+function urlSlug(title) {
+	let newStr = title
+		.trim()
+		.toLowerCase()
+		.split(' ')
+		.filter((word) => word !== '')
+
+	console.log(newStr)
+	return newStr.join('-')
+}
+// Only change code above this line
+
+
+console.log(urlSlug(' Winter Is  Coming')) */
+
+/* function checkPositive(arr) {
+	// Only change code below this line
+	return arr.every((num) => num >= 0)
+	// Only change code above this line
+}
+
+checkPositive([1, 2, 3, -4, 5]) */
+
+/* function checkPositive(arr) {
+	// Only change code below this line
+	let cond = (elem) => elem > 0
+	return arr.some(cond)
+
+	// Only change code above this line
+}
+
+console.log(checkPositive([1, 2, 3, -4, 5]))
+ */
+function sumAll(arr) {
+	let newArr = arr.sort((a, b) => a - b)
+	let sum = 0
+	for (let i = newArr[0]; i <= newArr[1]; i++) {
+		sum += i
+		/* const element = arr[i] */
+	}
+	return sum
+}
+
+console.log(sumAll([10, 5]))
