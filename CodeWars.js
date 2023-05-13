@@ -834,3 +834,36 @@ console.log(highAndLow('1 2 -3 4 5'))
 }
 console.log(descendingOrder(123456789)) //, 987654321);
  */
+/* 
+function accum(s) {
+	let oneLetter = s
+	let newArr = []
+	for (let i = 0; i < oneLetter.length; i++) {
+		const element = oneLetter[i]
+		newArr.push(element.repeat(i + 1))
+	}
+	let newB = newArr.map((el, index) => {
+		let bigLett = el[0].toUpperCase()
+		let newStr = ''
+		return (newStr = bigLett + el[0].toLowerCase().repeat(index))
+	})
+
+	return newB.join('-')
+}
+console.log(accum('ZpglnRxqenU')) //, "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu"));
+ */
+/* function isIsogram(str) {
+	//...
+	let bool = 0
+
+	let b = str.toLowerCase().split('').sort()
+
+	for (let i = 0; i < b.length; i++) {
+		const element = b[i]
+		element === b[i + 1] ? (bool += 1) : (bool += 0)
+	}
+
+	return bool === 0 ? true : false
+}
+console.log(isIsogram('isIsogram')) // true ););
+ */
