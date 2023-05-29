@@ -867,3 +867,74 @@ console.log(accum('ZpglnRxqenU')) //, "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqq
 }
 console.log(isIsogram('isIsogram')) // true ););
  */
+
+/* var isSquare = function (n) {
+	if (n >= 0) {
+		sq = Math.sqrt(n)
+		return sq.toString().includes('.') ? false : true
+	} else return false
+
+	console.log(Math.sqrt(n))
+}
+console.log(isSquare(-4)) */
+
+//целое ли число из корня квадратного
+/* function isSquare(n) {
+	return Math.sqrt(n) % 1 === 0
+}
+ */
+
+/* function XO(str) {
+	let newStr = str.toLowerCase()
+	let x = 0
+	let o = 0
+	for (let i = 0; i < newStr.length; i++) {
+		const element = newStr[i]
+		element === 'x' ? (x += 1) : (x += 0)
+		element === 'o' ? (o += 1) : (o += 0)
+	}
+	return x === o
+}
+console.log(XO('xOxom')) //false
+ */
+
+/* function DNAStrand(dna) {
+	let newStr = ''
+	for (let i = 0; i < dna.length; i++) {
+		const element = dna[i]
+		element === 'A'
+			? (newStr += 'T')
+			: element === 'T'
+			? (newStr += 'A')
+			: element === 'G'
+			? (newStr += 'C')
+			: element === 'C'
+			? (newStr += 'G')
+			: (newStr += element)
+	}
+	return newStr
+	//your code here
+}
+console.log(DNAStrand('GTAT')) //,"CATA");
+ */
+
+/* function longest(s1, s2) {
+	// your code
+
+	let newArr = [...s1.split(''), ...s2.split('')].sort()
+	let newStr = ''
+	// for (let i = 0; i < newArr.length; i++) {
+	// 	const element = newArr[i]
+	// 	if (element !== newArr[i + 1]) {
+	// 		newStr += element
+	// 	}
+	// }
+	newArr.map((el, ind, array) => {
+		if (el !== array[ind + 1]) {
+			newStr += el
+		}
+	})
+	return newStr
+}
+console.log(longest('aretheyhere', 'yestheyarehere')) //, "aehrsty"));
+ */
