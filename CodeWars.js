@@ -938,3 +938,31 @@ console.log(DNAStrand('GTAT')) //,"CATA");
 }
 console.log(longest('aretheyhere', 'yestheyarehere')) //, "aehrsty"));
  */
+
+/* let user = {
+	name: 'Svyat',
+	hair: 33,
+	address: {
+		city: 'Bobruisk',
+		house: 12,
+	},
+	laptop: { title: 'Zenbook' },
+	books: ['Hunter', 'STALKER'],
+}
+const newBook = replaceBook(user, 'STALKER', 'Only IT-BOOKS!')
+
+function replaceBook(u, oldBook, newBook) {
+	let myNewCopy = {
+		...u,
+		books: [
+			...u.books.map((el) =>
+				el === oldBook ? el.replace(oldBook, newBook) : el
+			),
+		],
+	}
+
+	console.log(myNewCopy)
+
+	return myNewCopy
+}
+ */
