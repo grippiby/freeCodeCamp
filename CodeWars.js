@@ -966,3 +966,133 @@ function replaceBook(u, oldBook, newBook) {
 	return myNewCopy
 }
  */
+
+//Capitalize 1st LEtter (can slice(1) without word.length)
+/* function capitalizeWord(word) {
+	return word[0].toUpperCase() + word.slice(1, word.length)
+}
+console.log(capitalizeWord('glasswear')) //, 'Glasswear'));
+ */
+
+//Delete Vowels (aeiou)
+//Vowel remover
+/* function shortcut(string) {
+	let newStr = ''
+	for (let i = 0; i < string.length; i++) {
+		const element = string[i]
+
+		switch (element) {
+			case 'a':
+				break
+			case 'e':
+				break
+			case 'i':
+				break
+			case 'o':
+				break
+			case 'u':
+				break
+			default:
+				newStr += element
+		}
+
+	
+	}
+
+	return newStr
+}
+console.log(shortcut('how are you today?')) //, 'hw r y tdy?'););
+
+
+ */
+
+/* function problem(x) {
+	if (typeof x === 'string') {
+		return 'Error'
+	}
+	return x * 50 + 6
+	//your code here
+}
+
+console.log(problem(0.03))
+ */
+//Find the position in alphabet!
+/* function position(letter) {
+	const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+	letter = letter.toLowerCase()
+	return `Position of alphabet: ${alphabet.indexOf(letter) + 1}`
+}
+console.log(position('e'))
+ */
+
+/* const isEvenIndexSumGreater = (arr) => {
+	//...здесь пишем код.
+	let sumOdd = 0
+	let sumEven = 0
+
+	arr.map((el, ind) => {
+		if (ind % 2 === 0) {
+			sumOdd += el
+		}
+		if (ind % 2 !== 0) {
+			sumEven += el
+		}
+	})
+
+	return sumOdd >= sumEven
+}
+
+console.log(isEvenIndexSumGreater([100, 1, 200, 2, 300, 4]))
+ */
+
+// 5. Функция getSquarePositiveIntegers принимает параметром массив чисел и возвращает новый массив.
+// Новый массив состоит из квадратов целых положительных чисел, котрые являются элементами исходгого массива.
+// Исходный массив не мутирует.
+/* 
+function getSquarePositiveIntegers(array) {
+	//...здесь пишем код.
+	// В return стоит "заглушка", чтоб typescript не ругался
+	return [...array]
+		.filter((el) => el >= 0 && Number.isInteger(el))
+		.map((el) => Math.pow(el, 2))
+}
+
+console.log(getSquarePositiveIntegers([4, 5.6, -9.8, 3.14, 10, 6, 8.34, -2])) */
+
+// 6. Функция принимает параметром целое не отрицательное число N и возвращает сумму всех чисел от 0 до N включительно
+// Попробуйте реализовать функцию без использования перебирающих методов.
+
+/* function sumFirstNumbers(N) {
+	return Array.from({ length: N + 1 }, (_, index) => index).reduce(
+		(total, num) => total + num,
+		0
+	)
+	//...здесь пишем код.
+	// В return стоит "заглушка", чтоб typescript не ругался
+
+}
+console.log(sumFirstNumbers(4)) */
+
+// 2. Функция getTriangleType принимает три параметра:
+// длины сторон треугольника.
+// Функция должна возвращать:
+//  - "10", если треугольник равносторонний,
+//  - "01", если треугольник равнобедренный,
+//  - "11", если треугольник обычный,
+//  - "00", если такого треугольника не существует.
+
+/* function getTriangleType(a, b, c) {
+	if (a === b && b === c) {
+		return '10'
+	} else if (a + b <= c || a + c <= b || b + c <= a) {
+		return '00'
+	} else if (a === b || a === c || b === c) {
+		return '01'
+	} else {
+		return '11'
+	}
+	//...здесь пишем код.
+	// В return стоит "заглушка", чтоб typescript не ругался
+}
+console.log(getTriangleType(1, 1, 1))
+ */
