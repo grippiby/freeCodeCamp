@@ -1096,3 +1096,88 @@ console.log(sumFirstNumbers(4)) */
 }
 console.log(getTriangleType(1, 1, 1))
  */
+
+/* //мое решение (правильное ли?)
+function Node(data) {
+	this.data = data
+	this.next = null
+}
+
+function getNth(node, index) {
+	let newArr = node.split(' -> ').map((el) => (el !== 'null' ? +el : null))
+
+	if (newArr.length < index) {
+		return 'Invalid index value should throw error.'
+	} else {
+		return newArr.length > 1
+			? newArr[index]
+			: newArr[0] === 'null'
+			? 'Null linked list should throw error.'
+			: newArr[0]
+	}
+
+	console.log(newArr)
+	console.log(newArr2)
+}
+
+console.log(getNth(`1 -> 2 -> 3 -> null`, 2))
+ */
+
+//Связный список с использованием рекурсии
+/* function Node(data) {
+	this.data = data;
+	this.next = null;
+ }
+ 
+ function getNth(node, index) {
+	if (!node) throw new Error('Invalid node at ' + index);
+	
+	return (index === 0) ? node : getNth(node.next, index - 1);
+ } */
+
+//Summing a number's digits
+/* function sumDigits(number) {
+	let newVal = 0
+	for (let i = 0; i < number.toString().length; i++) {
+		const element = +number.toString()[i]
+		
+		element >= 0 ? (newVal = newVal + element) : (newVal += 0)
+	}
+	return newVal
+}
+console.log(sumDigits(-32))
+ */
+
+/* //Alternating Among Three Values
+//мое решение
+function f(x, cc) {
+	let newArr = []
+
+	for (const x in cc) {
+		if (Object.hasOwnProperty.call(cc, x)) {
+			const element = cc[x]
+			newArr.push(element)
+		}
+	}
+
+	return newArr.indexOf(x) < 1
+		? (myVal = newArr[1])
+		: newArr.indexOf(x) > 1
+		? (myVal = newArr[0])
+		: (myVal = newArr[2])
+}
+
+console.log(f(4, { a: 3, b: 4, c: 5 }))
+
+//интересное решение
+function f(x, cc) {
+	switch (x) {
+		case cc.a:
+			return cc.b
+		case cc.b:
+			return cc.c
+		case cc.c:
+			return cc.a
+	}
+}
+ */

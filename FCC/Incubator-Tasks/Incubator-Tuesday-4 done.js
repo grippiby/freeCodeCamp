@@ -92,7 +92,27 @@ function sumFirstNumbers(N) {
 // Считаем, что количество банкнот каждого номинала не ограничено
 
 function getBanknoteList(amountOfMoney) {
+	/* console.log(typeof amountOfMoney.toLocaleString('ru')) */
+
+	let digits = []
+	while (amountOfMoney) {
+		digits.unshift(amountOfMoney % 10)
+		amountOfMoney = Math.floor(amountOfMoney / 10)
+	}
+	console.log(digits.length)
+	console.log(digits)
+	const banknotes = [1000, 500, 100, 50, 20, 10, 5, 2, 1]
+	for (let i = 0; i < num.length; i++) {
+		const element = num[i]
+		myNewArr.concat(element)
+		console.log(element)
+	}
+	console.log(amountOfMoney)
+	console.log(myNewArr)
+
 	//...здесь пишем код.
 	// В return стоит "заглушка", чтоб typescript не ругался
 	return [1]
 }
+
+console.log(getBanknoteList(3278))
